@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_context_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/wifi_mobile_network"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Username: admin, Password: 123456)"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ET_username"
+        android:layout_width="390dp"
+        android:layout_height="60dp"
+        android:hint="Username"
+        android:backgroundTint="@color/purple_500"
+
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ET_password"
+        android:layout_width="390dp"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/ET_username"
+        app:layout_constraintTop_toBottomOf="@+id/ET_username" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BTN_login"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Login"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintStart_toStartOf="@+id/ET_password"
+        app:layout_constraintTop_toBottomOf="@+id/ET_password" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BTN_reset"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Reset"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/ET_password"
+        app:layout_constraintTop_toBottomOf="@+id/ET_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

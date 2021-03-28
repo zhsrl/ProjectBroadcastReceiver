@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BroadcastReceiver</string>
+    <string name="wifi_mobile_network">Чтобы войти, проверьте подключение к WiFi или Mobile Network</string>
+</resources>
